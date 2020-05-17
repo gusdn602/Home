@@ -1,0 +1,24 @@
+----------------------------------------------------------------
+0. 메인 폼 요청
+	요청내용 : / or /main.home
+	파라미터 : 
+	컨트롤러 : com.home.www.controller.MainController
+	뷰	   : /main.jsp
+----------------------------------------------------------------
+1. 로그인  폼 요청
+	요청내용 : /member/login.home
+	파라미터 : 무
+	컨트롤러 : com.home.www.controller.member.LoginForm
+	뷰	   : /member/Login.jsp
+----------------------------------------------------------------
+2. 로그인 처리 요청
+	요청내용 : /member/loginProc.home
+	파라미터 : id, pw
+	컨트롤러 : com.home.www.controller.member.LoginProc
+	뷰	   : redirect(
+----------------------------------------------------------------
+3. 로그아웃 처리 요청
+	요청내용 : /member/logoutProc.home
+	파라미터 : 무
+	컨트롤러 : com.home.www.controller.member.LogoutProc
+	뷰	   : redirect:/Home/main.home
