@@ -79,6 +79,7 @@ public class Dispatch extends HttpServlet {
 		HomeController home = map.get(realPath);
 		req.setAttribute("isRedirect", false);  	//속성값을 isRedirect로 설정하고 false로 지정한다.
 		String view = home.exec(req, resp);			//뷰를 서버 리퀘스트와 서버리스폰스 객체를 이용해서 실행 시키기 위한 변수
+		System.out.println(home);
 		boolean bool = (boolean)req.getAttribute("isRedirect");
 		
 		if (bool) {
